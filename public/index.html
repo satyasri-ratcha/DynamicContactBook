@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">📒 Dynamic Contact Book</div>
+
+    <div class="search-box">
+        <input type="text" id="search" placeholder="Search contacts...">
+    </div>
+
+    <div class="tabs">
+        <button class="tab active" onclick="filterCat('All')">All</button>
+        <button class="tab" onclick="filterCat('Family')">Family</button>
+        <button class="tab" onclick="filterCat('Friends')">Friends</button>
+        <button class="tab" onclick="filterCat('Work')">Work</button>
+    </div>
+
+    <!-- FORM -->
+    <div class="form">
+        <input type="text" id="name" placeholder="Enter Name">
+        <input type="text" id="phone" placeholder="Enter Phone">
+        <select id="category">
+            <option>Family</option>
+            <option>Friends</option>
+            <option>Work</option>
+            <option>Others</option>
+        </select>
+        <button onclick="addContact()">Add Contact</button>
+    </div>
+
+    <!-- CONTACT LIST -->
+    <div class="container" id="list"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
